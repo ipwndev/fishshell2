@@ -1,0 +1,39 @@
+LR_NDSROM 0x037f8000 0x18000-0x800
+{
+	ER_BootLoader +0
+	{
+		init_tcm.o (INIT7TDMI, +FIRST)   ; Core initialisation inc TCM enable
+		__main.o                         ; C Library entry point, must be in a root region
+	}
+	
+	;ER_ProgramID +0
+	;{
+	;	ProgramID.o (+RO)
+	;}
+	
+	ER_Absolute +0
+	{
+		* (+RO)
+	}
+	
+	ER_RW +0
+	{
+		* (+RW)
+		* (+ZI)
+	}
+	
+	HEAP +0 UNINIT
+	{
+		heap.o (+ZI)                     ; heap follows directly from image data
+	}
+	
+	ER_RebootLoader 0x0380fb00 0x400
+	{
+		* (.RebootLoader)
+	}
+	
+	;EOVR_Header 0x00000000 OVERLAY NOCOMPRESS 64
+	;{
+	;	ProgramID.o (OverlayHeader)
+	;}
+}

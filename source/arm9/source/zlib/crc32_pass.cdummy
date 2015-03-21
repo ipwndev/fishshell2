@@ -1,0 +1,12 @@
+
+#include "zutil.h"      /* for STDC and FAR definitions */
+
+#define local static
+
+unsigned long ZEXPORT crc32(crc, buf, len)
+    unsigned long crc;
+    const unsigned char FAR *buf;
+    unsigned len;
+{
+    return 0UL;
+}

@@ -1,0 +1,24 @@
+[convert]
+srcfn=snd_click_long_c.bin
+dstcfn=snd_click_long_c_bin.c
+dsthfn=snd_click_long_c_bin.h
+readoffset=0
+readsize=0
+signmode=0
+arraytype=const signed char
+arrayname=snd_click_long_c_bin
+arraysize=1
+arraylower=1
+retcnt=16
+[comment]
+srcfn=変換元ファイル名
+dstcfn=保存ソースファイル名
+dsthfn=保存ヘッダファイル名
+readoffset=スキップオフセット(バイト単位)
+readsize=最大読み込みサイズ(0で全て)(バイト単位)
+signmode=符号モード 0=符号無し16進数 1=符号無し10進数 2=符号有り10進数
+arraytype=配列型定義(sizeとの整合性チェックはしません）
+arrayname=配列名
+arraysize=要素当たりのバイト数(1,2,4のみ)(typeとの整合性チェックはしません）
+arraylower=16進表現文字 0=A～F 1=a～f
+retcnt=指定要素数ごとにリターンを入れる(0でリターンを入れない)

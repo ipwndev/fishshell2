@@ -1,0 +1,1 @@
+lfnNameUnicode[i] = 0;

@@ -1,0 +1,549 @@
+LR_NDSROM 0x02000000+0x00000 0x400000-0x00000
+{
+	ER_BootLoader +0
+	{
+		init_tcm.o (INIT946TCM, +FIRST)		; Core initialisation inc TCM enable
+		__main.o							; C Library entry point, must be in a root region
+		* (Region_Table)					; this section must be in a root region
+		* (ZISection_Table)				; this section must be in a root region
+	}
+	
+	ER_ProgramID +0
+	{
+		ProgramID.o (+RO)
+	}
+	
+	ER_Absolute +0
+	{
+		* (+RO)
+	}
+	
+	ER_RW +0
+	{
+		* (+RW)
+		* (+ZI)
+	}
+	
+	HEAP +0 UNINIT
+	{
+		heap.o (+ZI)                     ; heap follows directly from image data
+	}
+	
+	ER_ITCM_Global 0x01ff0008 0x800-8
+	{
+		* (ITCM_Global)
+		* (ITCM_MemTool)
+		* (ITCM_GLIB)
+	}
+	
+	ER_DTCM 0x02800000 0x500
+	{
+		* (.dtcm)
+	}
+	
+	EOVR_Header 0x00000000 OVERLAY NOCOMPRESS 64
+	{
+		ProgramID.o (OverlayHeader)
+	}
+	
+	; ----------------------------------------------------------------------------
+	; romeo2.ncd request ROMEO2 support.
+	
+	EOVR_Romeo2NCD 0x00000000 OVERLAY NOCOMPRESS
+	{
+		romeo2_ncd.o (+RO)
+	}
+	
+	; ----------------------------------------------------------------------------
+	; 0x023ff000-0x23e00								, 0x23e00, EOVR_AfterSystem
+	; 0x023ff000-0x23e00-0x13e00						, 0x13e00, EOVR_proc_*
+	; 0x023ff000-0x23e00-0x13e00-0x21800				, 0x21800, EOVR_libsnd_*
+	; 0x023ff000-0x23e00-0x13e00-0x21800-0x10000		, 0x10000, EOVR_libimg_* and EOVR_libglobal_*
+	; 0x023ff000-0x23e00-0x13e00-0x21800-0x10000-0xf00	, 0xf00	 , EOVR_AfterSystem2
+	; --------------------------------------------------------------------------------------
+	
+	EOVR_AfterSystem 0x023ff000-0x23e00 OVERLAY NOCOMPRESS 0x23e00
+	{
+		* (OVR_AfterSystem)
+		;libnds
+		card.o (+RO)
+		
+		; GLIB staff
+		cglfont.o (+RO)
+		cglstream.o (+RO)
+		cgltgf.o (+RO)
+		
+		; libs/FileSystem staff
+		cstream.o (+RO)
+		cstream_fs.o (+RO)
+		; shell.o (+RO)
+		shell_SystemAfter.o (+RO)
+		
+		; libs/DLL staff
+		dll.o (+RO)
+		dllsound.o (+RO)
+		playlist.o (+RO)
+		plug_lyric.o (+RO)
+		fpga_helper.o (+RO)
+		
+		; libs/Image staff
+		BMPReader.o (+RO)
+		cfont.o (+RO)
+		component.o (+RO)
+		ErrorDialog.o (+RO)
+		;ExifCache.o (+RO)
+		msgwin.o (+RO)
+		particle.o (+RO)
+		rect.o (+RO)
+		skin.o (+RO)
+		splash.o (+RO)
+		VideoResume.o (+RO)
+		vramcache.o (+RO)
+		
+		; libs/Memory staff
+		extmem.o (+RO)
+		extmem_DSBM.o (+RO)
+		extmem_EZ3in1.o (+RO)
+		extmem_M3ExtPack.o (+RO)
+		extmem_RawMem.o (+RO)
+		extmem_SuperCard.o (+RO)
+		; memtool.o (+RO)
+		
+		; libs/ndsrom
+		BootROM.o (+RO)
+		extlink.o (+RO)
+		NDSROMIcon.o (+RO)
+		
+		; libs/SaveState staff
+		launchstate.o (+RO)
+		procstate.o (+RO)
+		resume.o (+RO)
+		
+		; libs/Sound staff
+		sndeff.o (+RO)
+		strpcm.o (+RO)
+		snd_click_long_c_bin.o (+RO)
+		snd_click_short_c_bin.o (+RO)
+		
+		; libs/System staff
+		datetime.o (+RO)
+		; OverlayManager.o (+RO)
+		; zlibhelp.o (+RO)
+		; _console.o (+RO)
+		; _consoleWriteLog.o (+RO)
+		md5c.o (+RO)
+		fastlzss16decpalasm_body.o (+RO)
+		fastlzss16decpalasm.o (+RO)
+		
+		; libs/Text staff
+		euc2unicode.o (+RO)
+		lang.o (+RO)
+		; strtool.o (+RO)
+		; unicode.o (+RO)
+	}
+	
+	EOVR_proc_MainPass 0x023ff000-0x23e00-0x13e00 OVERLAY NOCOMPRESS 0x13e00
+	{
+		* (IWRAM_proc_MainPass)
+		inifile.o (+RO)
+	}
+	
+	EOVR_proc_ChkDsk 0x023ff000-0x23e00-0x13e00 OVERLAY NOCOMPRESS 0x13e00
+	{
+		proc_ChkDsk.o (+RO)
+		* (IWRAM_proc_ChkDsk)
+	}
+	
+	EOVR_proc_Setup 0x023ff000-0x23e00-0x13e00 OVERLAY NOCOMPRESS 0x13e00
+	{
+		proc_Setup.o (+RO)
+		* (IWRAM_proc_Setup)
+	}
+	
+	EOVR_proc_FileList 0x023ff000-0x23e00-0x13e00 OVERLAY NOCOMPRESS 0x13e00
+	{
+		proc_FileList.o (+RO)
+		* (IWRAM_proc_FileList)
+		NDSFiles.o (+RO)
+		hiddenpaths.o (+RO)
+		;MemPool.o (+RO)
+		ThumbDPG.o (+RO)
+		;ThumbExif.o (+RO)
+		ThumbIPK.o (+RO)
+		;ThumbM4A.o (+RO)
+		cipk_simple.o (+RO)
+		* (IWRAM_proc_AudioPlay)
+	}
+	
+	EOVR_proc_SysMenu 0x023ff000-0x23e00-0x13e00 OVERLAY NOCOMPRESS 0x13e00
+	{
+		proc_SysMenu.o (+RO)
+		* (IWRAM_proc_SysMenu)
+	}
+	
+	EOVR_proc_DPGCustom 0x023ff000-0x23e00-0x13e00 OVERLAY NOCOMPRESS 0x13e00
+	{
+		proc_DPGCustom.o (+RO)
+		* (IWRAM_proc_DPGCustom)
+	}
+	
+	EOVR_proc_DPGPlay 0x023ff000-0x23e00-0x13e00 OVERLAY NOCOMPRESS 0x13e00
+	{
+		proc_DPGPlay.o (+RO)
+		* (IWRAM_proc_DPGPlay)
+	}
+	
+	EOVR_proc_ImageCustom 0x023ff000-0x23e00-0x13e00 OVERLAY NOCOMPRESS 0x13e00
+	{
+		proc_ImageCustom.o (+RO)
+		* (IWRAM_proc_ImageCustom)
+	}
+	
+	EOVR_proc_ImageView 0x023ff000-0x23e00-0x13e00 OVERLAY NOCOMPRESS 0x13e00
+	{
+		proc_ImageView.o (+RO)
+		* (IWRAM_proc_ImageView)
+	}
+	
+	EOVR_proc_TextCustom 0x023ff000-0x23e00-0x13e00 OVERLAY NOCOMPRESS 0x13e00
+	{
+		proc_TextCustom.o (+RO)
+		* (IWRAM_proc_TextCustom)
+	}
+	
+	EOVR_proc_TextMenu 0x023ff000-0x23e00-0x13e00 OVERLAY NOCOMPRESS 0x13e00
+	{
+		proc_TextMenu.o (+RO)
+		* (IWRAM_proc_TextMenu)
+	}
+	
+	EOVR_proc_TextView 0x023ff000-0x23e00-0x13e00 OVERLAY NOCOMPRESS 0x13e00
+	{
+		proc_TextView.o (+RO)
+		* (IWRAM_proc_TextView)
+		cctf.o (+RO)
+		cctf_dfs.o (+RO)
+	}
+	
+	EOVR_proc_BinView 0x023ff000-0x23e00-0x13e00 OVERLAY NOCOMPRESS 0x13e00
+	{
+		proc_BinView.o (+RO)
+		* (IWRAM_proc_BinView)
+	}
+	
+	EOVR_proc_Launch 0x023ff000-0x23e00-0x13e00 OVERLAY NOCOMPRESS 0x13e00
+	{
+		proc_Launch.o (+RO)
+		* (IWRAM_proc_Launch)
+	}
+	
+	EOVR_proc_Custom 0x023ff000-0x23e00-0x13e00 OVERLAY NOCOMPRESS 0x13e00
+	{
+		proc_Custom.o (+RO)
+		* (IWRAM_proc_Custom)
+	}
+	
+	EOVR_proc_BootROM 0x023ff000-0x23e00-0x13e00 OVERLAY NOCOMPRESS 0x13e00
+	{
+		proc_BootROM.o (+RO)
+		* (IWRAM_proc_BootROM)
+	}
+	
+	EOVR_proc_MemoEdit 0x023ff000-0x23e00-0x13e00 OVERLAY NOCOMPRESS 0x13e00
+	{
+		proc_MemoEdit.o (+RO)
+		* (IWRAM_proc_MemoEdit)
+	}
+	
+	EOVR_proc_MemoList 0x023ff000-0x23e00-0x13e00 OVERLAY NOCOMPRESS 0x13e00
+	{
+		proc_MemoList.o (+RO)
+		* (IWRAM_proc_MemoList)
+	}
+	
+    ;EOVR_proc_AudioPlay 0x023ff000-0x23e00-0x13e00 OVERLAY NOCOMPRESS 0x13e00
+    ;{
+    ; proc_AP.o (+RO)
+    ; * (IWRAM_proc_AudioPlay)
+    ;}
+	
+	EOVR_proc_AudioCustom 0x023ff000-0x23e00-0x13e00 OVERLAY NOCOMPRESS 0x13e00
+	{
+		proc_AudioCustom.o (+RO)
+		* (IWRAM_proc_AudioCustom)
+	}
+	
+	; --------------------------------------------------------------------------------------
+	EOVR_libsnd_mp3 0x023ff000-0x23e00-0x13e00-0x21800 OVERLAY NOCOMPRESS 0x21800
+	{
+		plug_mp3.o (+RO)
+		bit.o (+RO)
+		decoder.o (+RO)
+		fixed.o (+RO)
+		frame.o (+RO)
+		huffman.o (+RO)
+		layer12.o (+RO)
+		layer3.o (+RO)
+		stream.o (+RO)
+		synth.o (+RO)
+		timer.o (+RO)
+		version.o (+RO)
+	}
+	
+	EOVR_libsnd_midi 0x023ff000-0x23e00-0x13e00-0x21800 OVERLAY NOCOMPRESS 0x21800
+	{
+		plug_midi.o (+RO)
+		mtrk.o (+RO)
+		pch.o (+RO)
+		rcplib.o (+RO)
+		smidlib.o (+RO)
+		smidlib_sm.o (+RO)
+		sndfont.o (+RO)
+	}
+	
+	EOVR_libsnd_gme 0x023ff000-0x23e00-0x13e00-0x21800 OVERLAY NOCOMPRESS 0x21800
+	{
+		plug_gme.o (+RO)
+		Ay_Apu.o (+RO)
+		Ay_Cpu.o (+RO)
+		Ay_Emu.o (+RO)
+		Gbs_Emu.o (+RO)
+		Gb_Apu.o (+RO)
+		Gb_Cpu.o (+RO)
+		Gb_Oscs.o (+RO)
+		gme.o (+RO)
+		Hes_Apu.o (+RO)
+		Hes_Cpu.o (+RO)
+		Hes_Emu.o (+RO)
+		Kss_Cpu.o (+RO)
+		Kss_Emu.o (+RO)
+		Kss_Scc_Apu.o (+RO)
+		Nes_Apu.o (+RO)
+		Nes_Cpu.o (+RO)
+		Nes_Fme7_Apu.o (+RO)
+		Nes_Namco_Apu.o (+RO)
+		Nes_Oscs.o (+RO)
+		Nes_Vrc6_Apu.o (+RO)
+		Nsf_Emu.o (+RO)
+		Sap_Apu.o (+RO)
+		Sap_Cpu.o (+RO)
+		Sap_Emu.o (+RO)
+		Sms_Apu.o (+RO)
+	}
+	
+	EOVR_libsnd_ogg 0x023ff000-0x23e00-0x13e00-0x21800 OVERLAY NOCOMPRESS 0x21800
+	{
+		plug_ogg.o (+RO)
+		bitwise.o (+RO)
+		codebook.o (+RO)
+		floor0.o (+RO)
+		floor1.o (+RO)
+		framing.o (+RO)
+		info.o (+RO)
+		mapping0.o (+RO)
+		_libogg_misc.o (+RO)
+		res012.o (+RO)
+		vorbisfile.o (+RO)
+		_libogg_dsp.o (+RO)
+		_libogg_mdct.o (+RO)
+	}
+	
+	EOVR_libsnd_wave 0x023ff000-0x23e00-0x13e00-0x21800 OVERLAY NOCOMPRESS 0x21800
+	{
+		plug_wav.o (+RO)
+	}
+	
+	; --------------------------------------------------------------------------------------
+	
+	EOVR_libimg_jpeg 0x023ff000-0x23e00-0x13e00-0x21800-0x10000 OVERLAY NOCOMPRESS 0x10000
+	{
+		plug_jpeg.o (+RO)
+		jcomapi.o (+RO)
+		jdapimin.o (+RO)
+		jdapistd.o (+RO)
+		jdatasrc.o (+RO)
+		jdcoefct.o (+RO)
+		jdcolor.o (+RO)
+		jddctmgr.o (+RO)
+		jdhuff.o (+RO)
+		jdinput.o (+RO)
+		jdmainct.o (+RO)
+		jdmarker.o (+RO)
+		jdmaster.o (+RO)
+		jdmerge.o (+RO)
+		jdphuff.o (+RO)
+		jdpostct.o (+RO)
+		jdsample.o (+RO)
+		
+		jerror.o (+RO)
+		jidctfst.o (+RO)
+		jidctred.o (+RO)
+		
+		jmemansi.o (+RO)
+		jmemmgr.o (+RO)
+		jquant1.o (+RO)
+		jutils.o (+RO)
+	}
+	
+	EOVR_libimg_png 0x023ff000-0x23e00-0x13e00-0x21800-0x10000 OVERLAY NOCOMPRESS 0x10000
+	{
+		plug_png.o (+RO)
+		png.o (+RO)
+		pngerror.o (+RO)
+		pngget.o (+RO)
+		pngmem.o (+RO)
+		pngread.o (+RO)
+		pngrio.o (+RO)
+		pngrtran.o (+RO)
+		pngrutil.o (+RO)
+		pngset.o (+RO)
+		pngtrans.o (+RO)
+	}
+	
+	EOVR_libimg_bmp 0x023ff000-0x23e00-0x13e00-0x21800-0x10000 OVERLAY NOCOMPRESS 0x10000
+	{
+		plug_bmp.o (+RO)
+	}
+	
+	EOVR_libimg_gif 0x023ff000-0x23e00-0x13e00-0x21800-0x10000 OVERLAY NOCOMPRESS 0x10000
+	{
+		plug_gif.o (+RO)
+		dgif_lib.o (+RO)
+		gif_err.o (+RO)
+		gifalloc.o (+RO)
+	}
+	
+	EOVR_libimg_psd 0x023ff000-0x23e00-0x13e00-0x21800-0x10000 OVERLAY NOCOMPRESS 0x10000
+	{
+		plug_psd.o (+RO)
+	}
+	
+	; --------------------------------------------------------------------------------------
+	
+	EOVR_libglobal_dpg 0x023ff000-0x23e00-0x13e00-0x21800-0x10000 OVERLAY NOCOMPRESS 0x10000
+	{
+		alloc.o (+RO)
+		clibdpg.o (+RO)
+		clibmpg.o (+RO)
+		decode.o (+RO)
+		header.o (+RO)
+		idct.o (+RO)
+		motion_comp.o (+RO)
+		motion_comp_arm.o (+RO)
+		plug_dpg.o (+RO)
+		plug_mp2.o (+RO)
+		slice.o (+RO)
+		_dpgfs.o (+RO)
+		plug_srttitle.o (+RO)
+	}
+	
+	EOVR_libglobal_ndsrom 0x023ff000-0x23e00-0x13e00-0x21800-0x10000 OVERLAY NOCOMPRESS 0x10000
+	{
+		*(EOVR_libglobal_ndsrom)
+		plug_ndsrom.o (+RO)
+	}
+	
+	; ----------------------------------------------------------------------------
+	
+	EOVR_AfterSystem2 0x023ff000-0x23e00-0x13e00-0x21800-0x10000-0xf00 OVERLAY NOCOMPRESS 0xf00
+	{
+		* (OVR_AfterSystem2)
+	}
+	
+	; ----------------------------------------------------------------------------
+	; 0x01ff0800		, 0x7800 , EOVR_ITCM_libglobal_*
+	; 0x01ff0800		, 0xd00  , EOVR_ITCM_libimg
+	; 0x01ff0800+0xd00	, 0x6b00 , EOVR_ITCM_libsnd
+	; ----------------------------------------------------------------------------
+	
+	EOVR_ITCM_libglobal_dpg 0x01ff0800 OVERLAY NOCOMPRESS 0x7800
+	{
+		* (ITCM_libglobal_dpg)
+	}
+	
+	EOVR_ITCM_libglobal_ndsrom 0x01ff0800 OVERLAY NOCOMPRESS 0x7800
+	{
+		* (ITCM_libglobal_ndsrom)
+	}
+	
+	; --------------------------------------------------------------------------------------
+	
+	EOVR_ITCM_libimg_jpeg 0x01ff0800 OVERLAY NOCOMPRESS 0xd00
+	{
+		* (ITCM_libimg_jpeg)
+	}
+	
+	EOVR_ITCM_libimg_png 0x01ff0800 OVERLAY NOCOMPRESS 0xd00
+	{
+		* (ITCM_libimg_png)
+	}
+	
+	EOVR_ITCM_libimg_bmp 0x01ff0800 OVERLAY NOCOMPRESS 0xd00
+	{
+		* (ITCM_libimg_bmp)
+	}
+	
+	EOVR_ITCM_libimg_gif 0x01ff0800 OVERLAY NOCOMPRESS 0xd00
+	{
+		* (ITCM_libimg_gif)
+	}
+	
+	EOVR_ITCM_libimg_psd 0x01ff0800 OVERLAY NOCOMPRESS 0xd00
+	{
+		* (ITCM_libimg_psd)
+	}
+	
+	; --------------------------------------------------------------------------------------
+	
+	EOVR_ITCM_libsnd_mp3 0x01ff0800+0xd00 OVERLAY NOCOMPRESS 0x6b00
+	{
+		* (ITCM_libsnd_mp3)
+	}
+	
+	EOVR_ITCM_libsnd_ogg 0x01ff0800+0xd00 OVERLAY NOCOMPRESS 0x6b00
+	{
+		* (ITCM_libsnd_ogg)
+	}
+	
+	EOVR_ITCM_libsnd_gme 0x01ff0800+0xd00 OVERLAY NOCOMPRESS 0x6b00
+	{
+		Blip_Buffer.o (+RO)
+		Classic_Emu.o (+RO)
+		Data_Reader.o (+RO)
+		Effects_Buffer.o (+RO)
+		Gme_File.o (+RO)
+		Multi_Buffer.o (+RO)
+		Music_Emu.o (+RO)
+		* (ITCM_libsnd_gme)
+	}
+	
+	EOVR_ITCM_libsnd_midi 0x01ff0800+0xd00 OVERLAY NOCOMPRESS 0x6b00
+	{
+		* (ITCM_libsnd_midi)
+	}
+	
+	EOVR_ITCM_libsnd_wave 0x01ff0800+0xd00 OVERLAY NOCOMPRESS 0x6b00
+	{
+		* (ITCM_libsnd_wave)
+	}
+	
+	; ----------------------------------------------------------------------------
+	; MTCM in DTCM for DPG
+	
+	EOVR_MTCM 0x02800000+0x500 OVERLAY 0x3d00-0x500
+	{
+		header.o (.constdata)
+		slice.o (.constdata)
+		clibmpg.o (.constdata)
+		* (.mtcmset)
+		* (.mtcmvar)
+	}
+	
+	; ----------------------------------------------------------------------------
+    ; Reboot loader request NDSROM loader.
+    
+    EOVR_libglobal_RebootLoader 0x023ff200 0x200 ; IPC偲廳側傜側偄傛偆偵拲堄
+    {
+        * (.rebootloader)
+    }
+}

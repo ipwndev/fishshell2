@@ -1,0 +1,104 @@
+Why uncompressed gifs?
+----------------------
+
+Normal gif files use an LZW (Lempel-Ziv-Welsh) compression algorithm
+to save space.  This algorithm is patented by UniSys.  Because of this,
+software which creates normal, compressed gifs are subject to licensing
+fees by UniSys.
+
+What are uncompressed gifs?
+---------------------------
+
+Uncompressed gifs are image files that do not use LZW compression to
+compress their image data but are still recognizable as gif files by
+decoders which expect normal gifs.  Here is an explanation of how to
+implement an algorithm to do this:
+
+From: Graphics File Formats FAQ: General Graphics Format Questions
+http://www.ora.com/infocenters/gff/gff-faq/
+
+  Subject: 7. Is there an uncompressed GIF format?
+  
+  Realizing that the heart of the GIF patent controversy is the LZW 
+  data compression algorithm itself, you may ask if there is a raw or
+  uncompressed version of GIF that can be read and written without
+  using the LZW alogrithm. Officially, the answer is no.
+  
+  The GIF specification does not defined a way to store uncompressed
+  bitmap data. All bitmap data stored in a GIF file is compressed using
+  the LZW algorithm. If you did write a program that stored
+  uncompressed data using the GIF format, no other GIF reader would be
+  able to decode the GIF files it created.
+  
+  So is there a way to modify the compressed data in a GIF file so it is 
+  no longer in a format described by the LZW patent, but still readable
+  by GIF decoders? They answer to this is yes!
+  
+  When a GIF file is compressed, an initial LZW code table is created
+  based on the bit-depth of the raw image data being LZW-encoded. For
+  example, a bitmap with 4-bit pixels will be encoded with an LZW code
+  table initially containing 18 entries: 16 color indicies ranging from
+  00000 to 01111, a clear code (10000), and a end-of-data code (10001).
+  
+  As LZW encoding proceedes, color codes from the data are used to form
+  new table entries, and its the formation of these new entries that is
+  the heart of LZW encoding. If an encoder only used the initial table
+  and did not create any new table entry codes, then all of the
+  resulting encoded data will be codes representing the indicies of the
+  colors stored the in the GIF file's active color table.
+  
+  This process is explained in a post made to comp.graphics.misc by
+  Dr. Tom Lane on 05 Dec 1996:
+  
+      ...the idea is to emit only single-symbol string codes, plus a Clear
+      code every so often to keep the decoder from jacking up the code
+      width. In this mode your encoder is simply packing N-bit pixel
+      values into N+1-bit fields and keeping count; nothing patentable
+      there. Note that the data is not merely not compressed, it's
+      *expanded*: you need 9 bits per pixel for an 8-bit GIF. I wouldn't
+      care to use this trick for low-depth data. The worst case is for
+      1-bit (black and white) data; not only do you need 2 bits/pixel, but
+      every other symbol has to be a Clear to keep the code width down to 2
+      bits ... net result, 4:1 expansion.
+  
+  Because this encoder ends up storing N+1 bits for every N bits of
+  data, plus a clear code every 2^N-2 codes, an 8-bit "non-compressed"
+  GIF image will be 1/8th larger than the same bitmap stored as an
+  LZW-compressed GIF.
+  
+  Tom explained this a few days later:
+  
+      Note, however, that you have to insert "clear" codes often enough to
+      prevent the decoder from ratcheting up the symbol width, or else
+      keep track of what the current symbol width should be.  It's been a
+      while since I looked at this in detail, but I think you need a clear
+      every 2^N-2 codes, where N is the underlying data depth, if you want
+      the symbol width to stay at N+1 bits.
+  
+  [Note: Thanks to Tom Lane of the Independant JPEG Group and Neil
+  Aggarwal of Bellcore for provising the Usenet discussion that
+  contained this material]
+
+Since gif reading software must use an LZW decoder, is it legal?
+----------------------------------------------------------------
+After a bit of online investigation, I was sent the following letter:
+
+  From rms@santafe.edu  Sun Sep  6 18:39:17 1998
+  Date: Sun, 6 Sep 1998 19:37:52 -0600
+  From: Richard Stallman <rms@santafe.edu>
+  To: badger@prtr-13.ucsc.edu
+  Subject: Re: Decoding LZW okay:: Source?
+  
+      I am looking for someone who can explain why decoding LZW is not
+      patented under either the IBM or the UniSys patents.
+  
+  Because the wording of the claims that mention decompression describes
+  a system which can do both compression and decompression.
+  
+  This is evident in the words of the patent.  I asked a lawyer to
+  confirm that the words mean what they appear to mean; he said that
+  they do.
+
+
+(Note: in the past, Unisys has made statements that seem to imply they
+don't agree with this interpretation.)
