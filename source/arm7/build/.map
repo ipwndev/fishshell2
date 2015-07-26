@@ -1,0 +1,1062 @@
+Archive member included because of file (symbol)
+
+/opt/devkitpro/libnds/lib/libnds7.a(clock.o)
+                              main.o (rtcGetTimeAndDate)
+/opt/devkitpro/libnds/lib/libnds7.a(spi.o)
+                              main.o (writePowerManagement)
+/opt/devkitpro/libnds/lib/libnds7.a(system.o)
+                              main.o (installSystemFIFO)
+/opt/devkitpro/libnds/lib/libnds7.a(touch.o)
+                              main.o (touchRead)
+/opt/devkitpro/libnds/lib/libnds7.a(userSettings.o)
+                              main.o (readUserSettings)
+/opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o)
+                              /opt/devkitpro/libnds/lib/libnds7.a(system.o) (fifoSendValue32)
+/opt/devkitpro/libnds/lib/libnds7.a(interrupts.o)
+                              main.o (setPowerButtonCB)
+/opt/devkitpro/libnds/lib/libnds7.a(libnds_exit.arm.o)
+                              /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/ds_arm7_crt0.o (__libnds_exit)
+/opt/devkitpro/libnds/lib/libnds7.a(intrwait.o)
+                              main.o (swiWaitForVBlank)
+/opt/devkitpro/libnds/lib/libnds7.a(biosCalls.o)
+                              main.o (swiDelay)
+/opt/devkitpro/libnds/lib/libnds7.a(interruptDispatcher.o)
+                              /opt/devkitpro/libnds/lib/libnds7.a(interrupts.o) (IntrMain)
+/opt/devkitpro/libnds/lib/libnds7.a(swiSoftReset.o)
+                              /opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o) (swiSoftReset)
+/opt/devkitpro/libnds/lib/libnds7.a(i2c.o)
+                              /opt/devkitpro/libnds/lib/libnds7.a(interrupts.o) (i2cWriteRegister)
+/opt/devkitpro/libnds/lib/libnds7.a(sdmmc.o)
+                              /opt/devkitpro/libnds/lib/libnds7.a(system.o) (sdmmcMsgHandler)
+/opt/devkitpro/libnds/lib/libnds7.a(systemShutDown.o)
+                              /opt/devkitpro/libnds/lib/libnds7.a(libnds_exit.arm.o) (systemShutDown)
+/opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/libgcc.a(_udivsi3.o)
+                              main.o (__aeabi_uidiv)
+/opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/libgcc.a(_divsi3.o)
+                              main.o (__aeabi_idiv)
+/opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/libgcc.a(_dvmd_tls.o)
+                              /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+/opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
+                              /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/ds_arm7_crt0.o (__libc_init_array)
+/opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-malloc.o)
+                              memtoolARM7.o (malloc)
+/opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+                              /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-malloc.o) (_malloc_r)
+/opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-memcpy-stub.o)
+                              /opt/devkitpro/libnds/lib/libnds7.a(userSettings.o) (memcpy)
+/opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-mlock.o)
+                              /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o) (__malloc_lock)
+/opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-freer.o)
+                              /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-malloc.o) (_free_r)
+/opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
+                              /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-malloc.o) (_impure_ptr)
+/opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libsysbase.a(sbrk.o)
+                              /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o) (_sbrk_r)
+/opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libsysbase.a(malloc_vars.o)
+                              /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libsysbase.a(sbrk.o) (fake_heap_start)
+
+Allocating common symbols
+Common symbol       size              file
+
+fifo_datamsg_data   0x40              /opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o)
+fifo_buffer         0x800             /opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o)
+irqTableAUX         0xc8              /opt/devkitpro/libnds/lib/libnds7.a(interrupts.o)
+fifo_value32_func   0x40              /opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o)
+fifo_address_func   0x40              /opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o)
+fifo_value32_data   0x40              /opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o)
+fifo_value32_queue  0x40              /opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o)
+fifo_data_queue     0x40              /opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o)
+irqTable            0xc8              /opt/devkitpro/libnds/lib/libnds7.a(interrupts.o)
+fifo_address_data   0x40              /opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o)
+MappedVRAM          0x1               memtoolARM7.o
+sdmmc_cid           0x10              /opt/devkitpro/libnds/lib/libnds7.a(sdmmc.o)
+fifo_datamsg_func   0x40              /opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o)
+fifo_address_queue  0x40              /opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x08000000         0x02000000
+iwram            0x037f8000         0x00018000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x037f8000                __iwram_start = ORIGIN (iwram)
+                0x03810000                __iwram_top = (ORIGIN (iwram) + 0x18000)
+                0x0380ff00                __sp_irq = (__iwram_top - 0x100)
+                0x0380fe00                __sp_svc = (__sp_irq - 0x100)
+                0x0380fd00                __sp_usr = (__sp_svc - 0x100)
+                0x03fffff8                __irq_flags = 0x3fffff8
+                0x03ffffc0                __irq_flagsaux = 0x3ffffc0
+                0x03fffffc                __irq_vector = 0x3fffffc
+
+.init           0x037f8000       0xe8
+                0x037f8000                __text_start = .
+ *(.init)
+ .init          0x037f8000       0xd0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/ds_arm7_crt0.o
+                0x037f8000                _start
+ .init          0x037f80d0        0xc /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crti.o
+                0x037f80d0                _init
+ .init          0x037f80dc        0xc /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtn.o
+                0x037f80e8                . = ALIGN (0x4)
+
+.plt
+ *(.plt)
+
+.text           0x037f80f0     0xa188
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x037f80f0        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/ds_arm7_crt0.o
+ .text          0x037f80f0        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crti.o
+ .text          0x037f80f0      0x128 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtbegin.o
+ .text          0x037f8218        0x0 ProgramID.o
+ .text          0x037f8218        0x0 _console.o
+ .text          0x037f8218      0x320 a7sleep.o
+                0x037f8218                PM_GetRegister(int)
+                0x037f82a8                PM_SetRegister(int, int)
+                0x037f8328                PM_SetControl(int)
+                0x037f83a8                a7lcd_select(int)
+                0x037f842c                a7led(int)
+                0x037f84b0                a7poff()
+                0x037f84b8                a7SetSoundAmplifier(bool)
+ .text          0x037f8538     0x191c main.o
+                0x037f93a4                VolNoAGC(short*, short*, unsigned int, int)
+                0x037f9470                VolUseAGC(short*, short*, unsigned int, int)
+                0x037f960c                CallBackIRQ_strpcmUpdate()
+ .text.unlikely
+                0x037f9e54      0x174 main.o
+ .text.startup  0x037f9fc8      0x39c main.o
+                0x037f9fc8                main
+ .text          0x037fa364      0x170 pcm1770.o
+                0x037fa364                dac_spi(int, int)
+                0x037fa390                pcm1770_set_volume(int, int)
+                0x037fa434                pcm1770_set_volumemute(bool)
+                0x037fa448                pcm1770_setup()
+ .text          0x037fa4d4       0xec rawpcm.o
+                0x037fa4d4                RAWPCM_Start_48kHzBypass()
+                0x037fa520                RAWPCM_Start_VarFreq(unsigned int)
+                0x037fa588                RAWPCM_Stop()
+ .text          0x037fa5c0       0x50 romeo2_hp.o
+                0x037fa5c0                hp_sense_connect()
+                0x037fa5f4                hp_sense_switch()
+ .text          0x037fa610       0xc4 filesysARM7.o
+                0x037fa610                FileSys_GetFileSize
+                0x037fa61c                FileSys_MP2_fread
+ .text          0x037fa6d4      0x1ec memtoolARM7.o
+                0x037fa6d4                SetMemoryMode
+                0x037fa6e0                SetMemoryMode_End
+                0x037fa6f4                safemalloc
+                0x037fa7d4                safefree
+                0x037fa7fc                MemCopy16DMA3
+                0x037fa838                MemSet16DMA3
+                0x037fa88c                PrintFreeMem
+ .text          0x037fa8c0      0x7d0 plug_mp2.o
+                0x037fadc0                UpdateMP2
+                0x037fae88                FreeMP2
+                0x037faf10                StartMP2
+                0x037fb048                MP2_GetChannelCount
+                0x037fb070                MP2_GetSampleRate
+                0x037fb088                MP2_GetSamplePerFrame
+ .text          0x037fb090      0x164 bit.o
+                0x037fb090                mad_bit_init
+                0x037fb0a8                mad_bit_length
+                0x037fb0d0                mad_bit_nextbyte
+                0x037fb0e4                mad_bit_skip
+                0x037fb13c                mad_bit_read
+ .text          0x037fb1f4       0x68 decoder.o
+                0x037fb1f4                mad_decoder_init
+                0x037fb24c                mad_decoder_finish
+                0x037fb254                mad_decoder_message
+ .text          0x037fb25c       0xe4 fixed.o
+                0x037fb25c                mad_f_abs
+                0x037fb268                mad_f_div
+ .text          0x037fb340      0x8c0 frame.o
+                0x037fb56c                mad_header_init
+                0x037fb5c0                mad_frame_init
+                0x037fb664                mad_frame_finish
+                0x037fb668                mad_header_decode
+                0x037fbad8                mad_frame_decode
+                0x037fbbb0                mad_frame_mute
+ .text          0x037fbc00      0x890 layer12.o
+                0x037fbd08                mad_layer_II
+ .text          0x037fc490      0x15c stream.o
+                0x037fc490                mad_stream_init
+                0x037fc4ec                mad_stream_finish
+                0x037fc514                mad_stream_buffer
+                0x037fc544                mad_stream_skip
+                0x037fc554                mad_stream_sync
+                0x037fc5d0                mad_stream_errorstr
+ .text          0x037fc5ec     0x234c synth.o
+                0x037fc5ec                mad_synth_init
+                0x037fc664                mad_synth_mute
+                0x037fc6bc                mad_synth_frame
+ .text          0x037fe938        0x0 version.o
+ .text          0x037fe938        0x0 snd_click_long_c_bin.o
+ .text          0x037fe938        0x0 snd_click_short_c_bin.o
+ .text          0x037fe938       0x4c read_bios.o
+                0x037fe938                readBios
+ .text          0x037fe984      0x3b4 /opt/devkitpro/libnds/lib/libnds7.a(clock.o)
+                0x037fe984                syncRTC
+                0x037fe994                BCDToInteger
+                0x037fe9b6                integerToBCD
+                0x037fe9e0                rtcTransaction
+                0x037fead4                rtcReset
+                0x037feb14                rtcGetTimeAndDate
+                0x037feb5c                rtcSetTimeAndDate
+                0x037feb84                rtcGetTime
+                0x037febcc                rtcSetTime
+                0x037febf2                resyncClock
+                0x037fecb8                initClockIRQ
+ .text          0x037fed38      0x120 /opt/devkitpro/libnds/lib/libnds7.a(spi.o)
+                0x037fed38                writePowerManagement
+                0x037fed9c                readFirmware
+                0x037fee30                ledBlink
+ .text          0x037fee58      0x1a8 /opt/devkitpro/libnds/lib/libnds7.a(system.o)
+                0x037fee58                powerValueHandler
+                0x037fefa0                systemSleep
+                0x037fefc0                sleepEnabled
+                0x037fefcc                installSystemFIFO
+ .text          0x037ff000      0x718 /opt/devkitpro/libnds/lib/libnds7.a(touch.o)
+                0x037ff014                readTSCReg
+                0x037ff054                readTSCRegArray
+                0x037ff0a4                writeTSCReg
+                0x037ff0e8                CheckStylus
+                0x037ff170                touchRead
+                0x037ff1d4                touchReadTemperature
+                0x037ff204                readTouchValue
+                0x037ff35c                UpdateRange
+                0x037ff3c4                touchReadDSMode
+                0x037ff4e0                touchPenDown
+                0x037ff538                touchReadDSiMode
+                0x037ff5b8                touchReadXY
+ .text          0x037ff718       0xd8 /opt/devkitpro/libnds/lib/libnds7.a(userSettings.o)
+                0x037ff718                readUserSettings
+ .text          0x037ff7f0      0xa6c /opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o)
+                0x037ffa54                fifoSendAddress
+                0x037ffa80                fifoSendValue32
+                0x037ffaba                fifoSendDatamsg
+                0x037ffb24                fifoGetAddress
+                0x037ffb74                fifoGetValue32
+                0x037ffbc0                fifoGetDatamsg
+                0x037fff38                fifoCheckAddress
+                0x037fff5c                fifoSetAddressHandler
+                0x037fffb4                fifoCheckDatamsg
+                0x037fffd8                fifoSetDatamsgHandler
+                0x0380005c                fifoCheckValue32
+                0x03800080                fifoSetValue32Handler
+                0x038000d8                fifoInit
+ .text          0x0380025c      0x340 /opt/devkitpro/libnds/lib/libnds7.a(interrupts.o)
+                0x0380025c                irqDummy
+                0x038002a2                i2cIRQHandler
+                0x038002fc                setPowerButtonCB
+                0x0380030c                irqSet
+                0x03800368                irqInitHandler
+                0x038003ac                irqEnable
+                0x03800410                irqDisable
+                0x03800478                irqClear
+                0x038004a0                irqSetAUX
+                0x038004c8                irqClearAUX
+                0x038004f0                irqDisableAUX
+                0x03800514                irqEnableAUX
+                0x03800538                irqInit
+ .text          0x0380059c       0x50 /opt/devkitpro/libnds/lib/libnds7.a(libnds_exit.arm.o)
+                0x0380059c                systemErrorExit
+                0x038005a0                __libnds_exit
+ .text          0x038005ec       0x54 /opt/devkitpro/libnds/lib/libnds7.a(intrwait.o)
+                0x038005ec                swiWaitForVBlank
+                0x038005fc                swiIntrWait
+ .text          0x03800640       0x70 /opt/devkitpro/libnds/lib/libnds7.a(biosCalls.o)
+                0x03800640                swiDelay
+                0x03800644                swiSleep
+                0x03800648                swiChangeSoundBias
+                0x0380064c                swiDivide
+                0x03800650                swiRemainder
+                0x03800656                swiDivMod
+                0x03800662                swiCopy
+                0x03800666                swiFastCopy
+                0x0380066a                swiSqrt
+                0x0380066e                swiCRC16
+                0x03800672                swiIsDebugger
+                0x03800676                swiUnpackBits
+                0x0380067a                swiDecompressLZSSWram
+                0x0380067e                swiDecompressLZSSVramNTR
+                0x03800682                swiDecompressLZSSVramTWL
+                0x03800686                swiDecompressHuffman
+                0x0380068a                swiDecompressRLEWram
+                0x0380068e                swiDecompressRLEVram
+                0x03800692                swiHalt
+                0x03800696                swiGetSineTable
+                0x0380069a                swiGetPitchTable
+                0x0380069e                swiGetVolumeTable
+                0x038006a2                swiSwitchToGBAMode
+                0x038006a6                swiSetHaltCR
+ .text          0x038006b0       0xec /opt/devkitpro/libnds/lib/libnds7.a(interruptDispatcher.o)
+                0x038006b0                IntrMain
+ *fill*         0x0380079c        0x4 ff
+ .text          0x038007a0       0x10 /opt/devkitpro/libnds/lib/libnds7.a(swiSoftReset.o)
+                0x038007a0                swiSoftReset
+ .text          0x038007b0      0x1b8 /opt/devkitpro/libnds/lib/libnds7.a(i2c.o)
+                0x038007c4                i2cDelay
+                0x038007dc                i2cStop
+                0x0380081c                i2cGetResult
+                0x03800834                i2cGetData
+                0x03800848                i2cSetDelay
+                0x03800864                i2cSelectDevice
+                0x03800888                i2cSelectRegister
+                0x038008ac                i2cWriteRegister
+                0x03800904                i2cReadRegister
+ .text          0x03800968      0x868 /opt/devkitpro/libnds/lib/libnds7.a(sdmmc.o)
+                0x03800abc                sdmmc_send_command
+                0x03800bec                sdmmc_cardinserted
+                0x03800bf8                sdmmc_init_irq
+                0x03800c34                sdmmc_controller_init
+                0x03800cbc                sdmmc_send_acmd41
+                0x03800d00                sdmmc_sdcard_init
+                0x03800ee8                sdmmc_sdcard_readsector
+                0x03800f70                sdmmc_sdcard_readsectors
+                0x03801018                sdmmc_sdcard_writesector
+                0x038010a0                sdmmc_sdcard_writesectors
+                0x03801148                sdmmcMsgHandler
+                0x0380118c                sdmmcValueHandler
+ .text          0x038011d0       0x30 /opt/devkitpro/libnds/lib/libnds7.a(systemShutDown.o)
+                0x038011d0                systemShutDown
+ .text          0x03801200      0x114 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/libgcc.a(_udivsi3.o)
+                0x03801200                __udivsi3
+                0x03801200                __aeabi_uidiv
+                0x038012f4                __aeabi_uidivmod
+ .text          0x03801314      0x148 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/libgcc.a(_divsi3.o)
+                0x03801314                __aeabi_idiv
+                0x03801314                __divsi3
+                0x0380143c                __aeabi_idivmod
+ .text          0x0380145c        0x4 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/libgcc.a(_dvmd_tls.o)
+                0x0380145c                __aeabi_ldiv0
+                0x0380145c                __aeabi_idiv0
+ .text          0x03801460       0x88 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
+                0x03801460                __libc_init_array
+ .text          0x038014e8       0x40 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-malloc.o)
+                0x038014e8                malloc
+                0x03801508                free
+ .text          0x03801528      0x71c /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+                0x03801528                _malloc_r
+ .text          0x03801c44       0xf4 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-memcpy-stub.o)
+                0x03801c44                memcpy
+ .text          0x03801d38        0x8 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-mlock.o)
+                0x03801d38                __malloc_lock
+                0x03801d3c                __malloc_unlock
+ .text          0x03801d40      0x368 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-freer.o)
+                0x03801d40                _malloc_trim_r
+                0x03801e3c                _free_r
+ .text          0x038020a8        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
+ .text          0x038020a8       0x74 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libsysbase.a(sbrk.o)
+                0x038020a8                _sbrk_r
+ .text          0x0380211c        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libsysbase.a(malloc_vars.o)
+ .text          0x0380211c        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtend.o
+ .text          0x0380211c        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtn.o
+ *fill*         0x0380211c        0x4 ff
+ .text.stub     0x03802120      0x10c linker stubs
+ *(.text.*personality*)
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+                0x0380222c                . = ALIGN (0x4)
+
+.v4_bx          0x03802278        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x03802278        0x0
+ .iplt          0x00000000        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/ds_arm7_crt0.o
+
+IWRAM_libglobal_mp2
+                0x03802278      0x210
+                0x03802278                . = ALIGN (0x4)
+                0x03802278                PROVIDE (__start_IWRAM_libglobal_mp2, ABSOLUTE (.))
+ IWRAM_libglobal_mp2
+                0x03802278      0x1e8 main.o
+ IWRAM_libglobal_mp2.stub
+                0x03802460        0xc linker stubs
+ IWRAM_libglobal_mp2
+                0x03802470       0x18 plug_mp2.o
+                0x03802488                PROVIDE (__stop_IWRAM_libglobal_mp2, .)
+
+.fini           0x03802488       0x18
+ *(.fini)
+ .fini          0x03802488        0xc /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crti.o
+                0x03802488                _fini
+ .fini          0x03802494        0xc /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtn.o
+                0x038024a0                __text_end = .
+
+.rodata         0x038024a0     0x1c08
+ *(.rodata)
+ .rodata        0x038024a0       0xd4 ProgramID.o
+                0x038024a0                OverlayHeader_ID
+                0x038024dc                ROMWEB
+                0x038024f4                ROMENV
+                0x03802510                ROMDATEVERYSHORT
+                0x0380251c                ROMDATESHORT
+                0x03802534                ROMDATE
+                0x03802554                ROMVERSION
+                0x03802568                ROMTITLE
+ .rodata        0x03802574      0x200 main.o
+ .rodata        0x03802774      0x144 frame.o
+ .rodata        0x038028b8      0x2fc layer12.o
+ .rodata        0x03802bb4      0x880 synth.o
+ .rodata        0x03803434      0xac4 snd_click_long_c_bin.o
+                0x03803434                snd_click_long_c_bin
+ .rodata        0x03803ef8      0x184 snd_click_short_c_bin.o
+                0x03803ef8                snd_click_short_c_bin
+ .rodata        0x0380407c       0x1a /opt/devkitpro/libnds/lib/libnds7.a(clock.o)
+ *fill*         0x03804096        0x2 ff
+ .rodata        0x03804098        0x4 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
+                0x03804098                _global_impure_ptr
+ *all.rodata*(*)
+ *(.roda)
+ *(.rodata.*)
+ .rodata.str1.4
+                0x0380409c        0x6 stream.o
+                                  0x8 (size before relaxing)
+ *fill*         0x038040a2        0x2 ff
+ .rodata.str1.4
+                0x038040a4        0x4 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
+ *(.gnu.linkonce.r*)
+                0x038040a8                . = ALIGN (0x4)
+
+OverlayHeader   0x038040a8       0x40
+                0x038040a8                . = ALIGN (0x4)
+                0x038040a8                PROVIDE (__start_OverlayHeader, ABSOLUTE (.))
+ OverlayHeader  0x038040a8       0x40 ProgramID.o
+                0x038040a8                OverlayHeader_ID_CanNotAccess
+                0x038040e8                PROVIDE (__stop_OverlayHeader, .)
+
+.rel.dyn        0x038040e8        0x0
+ .rel.iplt      0x00000000        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/ds_arm7_crt0.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x038040e8                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x038040e8                __exidx_end = .
+                0x038040e8                . = ALIGN (0x4)
+                0x038040e8                PROVIDE (__preinit_array_start, .)
+
+.preinit_array
+ *(.preinit_array)
+                0x038040e8                PROVIDE (__preinit_array_end, .)
+                0x038040e8                PROVIDE (__init_array_start, .)
+
+.init_array     0x038040e8        0x4
+ *(.init_array)
+ .init_array    0x038040e8        0x4 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtbegin.o
+                0x038040ec                PROVIDE (__init_array_end, .)
+                0x038040ec                PROVIDE (__fini_array_start, .)
+
+.fini_array     0x038040ec        0x4
+ *(.fini_array)
+ .fini_array    0x038040ec        0x4 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtbegin.o
+                0x038040f0                PROVIDE (__fini_array_end, .)
+
+.ctors          0x038040f0        0x0
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+                0x038040f0                . = ALIGN (0x4)
+
+.dtors          0x038040f0        0x0
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+                0x038040f0                . = ALIGN (0x4)
+
+.eh_frame       0x038040f0        0x4
+ *(.eh_frame)
+ .eh_frame      0x038040f0        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtbegin.o
+ .eh_frame      0x038040f0        0x4 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtend.o
+                0x038040f4                . = ALIGN (0x4)
+
+.gcc_except_table
+                0x038040f4        0x0
+ *(.gcc_except_table)
+                0x038040f4                . = ALIGN (0x4)
+
+.jcr            0x038040f4        0x4
+ *(.jcr)
+ .jcr           0x038040f4        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtbegin.o
+ .jcr           0x038040f4        0x4 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtend.o
+
+.got
+ *(.got.plt)
+ *(.got)
+
+.data           0x038040f8      0x860
+                0x038040f8                __data_start = ABSOLUTE (.)
+ *(.data)
+ .data          0x038040f8        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/ds_arm7_crt0.o
+ .data          0x038040f8        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crti.o
+ .data          0x038040f8        0x4 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtbegin.o
+                0x038040f8                __dso_handle
+ .data          0x038040fc        0x0 ProgramID.o
+ .data          0x038040fc        0x0 _console.o
+ .data          0x038040fc        0x0 a7sleep.o
+ .data          0x038040fc        0x4 main.o
+ .data          0x03804100        0x0 pcm1770.o
+ .data          0x03804100        0x0 rawpcm.o
+ .data          0x03804100        0x0 romeo2_hp.o
+ .data          0x03804100        0x0 filesysARM7.o
+ .data          0x03804100        0x0 memtoolARM7.o
+ .data          0x03804100        0x0 plug_mp2.o
+ .data          0x03804100        0x0 bit.o
+ .data          0x03804100        0x0 decoder.o
+ .data          0x03804100        0x0 fixed.o
+ .data          0x03804100        0x0 frame.o
+ .data          0x03804100        0x0 layer12.o
+ .data          0x03804100        0x0 stream.o
+ .data          0x03804100        0x0 synth.o
+ .data          0x03804100        0x0 version.o
+ .data          0x03804100        0x0 snd_click_long_c_bin.o
+ .data          0x03804100        0x0 snd_click_short_c_bin.o
+ .data          0x03804100        0x0 read_bios.o
+ .data          0x03804100        0x0 /opt/devkitpro/libnds/lib/libnds7.a(clock.o)
+ .data          0x03804100        0x0 /opt/devkitpro/libnds/lib/libnds7.a(spi.o)
+ .data          0x03804100        0x1 /opt/devkitpro/libnds/lib/libnds7.a(system.o)
+                0x03804100                sleepIsEnabled
+ .data          0x03804101        0x1 /opt/devkitpro/libnds/lib/libnds7.a(touch.o)
+ .data          0x03804102        0x0 /opt/devkitpro/libnds/lib/libnds7.a(userSettings.o)
+ *fill*         0x03804102        0x2 ff
+ .data          0x03804104       0x10 /opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o)
+                0x03804104                fifo_buffer_free
+                0x03804108                fifo_freewords
+                0x0380410c                fifo_send_queue
+                0x03804110                fifo_receive_queue
+ .data          0x03804114        0x0 /opt/devkitpro/libnds/lib/libnds7.a(interrupts.o)
+ .data          0x03804114        0x0 /opt/devkitpro/libnds/lib/libnds7.a(libnds_exit.arm.o)
+ .data          0x03804114        0x0 /opt/devkitpro/libnds/lib/libnds7.a(intrwait.o)
+ .data          0x03804114        0x0 /opt/devkitpro/libnds/lib/libnds7.a(biosCalls.o)
+ .data          0x03804114        0x0 /opt/devkitpro/libnds/lib/libnds7.a(interruptDispatcher.o)
+ .data          0x03804114        0x0 /opt/devkitpro/libnds/lib/libnds7.a(swiSoftReset.o)
+ .data          0x03804114        0x0 /opt/devkitpro/libnds/lib/libnds7.a(i2c.o)
+ .data          0x03804114        0x0 /opt/devkitpro/libnds/lib/libnds7.a(sdmmc.o)
+ .data          0x03804114        0x0 /opt/devkitpro/libnds/lib/libnds7.a(systemShutDown.o)
+ .data          0x03804114        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/libgcc.a(_udivsi3.o)
+ .data          0x03804114        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/libgcc.a(_divsi3.o)
+ .data          0x03804114        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/libgcc.a(_dvmd_tls.o)
+ .data          0x03804114        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
+ .data          0x03804114        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-malloc.o)
+ .data          0x03804114      0x410 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+                0x03804114                __malloc_av_
+                0x0380451c                __malloc_sbrk_base
+                0x03804520                __malloc_trim_threshold
+ .data          0x03804524        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-memcpy-stub.o)
+ .data          0x03804524        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-mlock.o)
+ .data          0x03804524        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-freer.o)
+ *fill*         0x03804524        0x4 ff
+ .data          0x03804528      0x430 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
+                0x03804528                _impure_ptr
+ .data          0x03804958        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libsysbase.a(sbrk.o)
+ .data          0x03804958        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libsysbase.a(malloc_vars.o)
+ .data          0x03804958        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtend.o
+ .data          0x03804958        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtn.o
+ *(.data.*)
+ *(.gnu.linkonce.d*)
+                0x03804958                . = ALIGN (0x4)
+                0x03804958                __data_end = ABSOLUTE (.)
+
+.igot.plt       0x03804958        0x0
+ .igot.plt      0x00000000        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/ds_arm7_crt0.o
+
+.tm_clone_table
+                0x03804958        0x0
+ .tm_clone_table
+                0x03804958        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtbegin.o
+ .tm_clone_table
+                0x03804958        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtend.o
+
+.bss            0x03804958      0xe54
+                0x03804958                __bss_start = ABSOLUTE (.)
+                0x03804958                __bss_start__ = ABSOLUTE (.)
+ *(.dynbss)
+ *(.gnu.linkonce.b*)
+ *(.bss*)
+ .bss           0x03804958        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/ds_arm7_crt0.o
+ .bss           0x03804958        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crti.o
+ .bss           0x03804958       0x1c /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtbegin.o
+ .bss           0x03804974        0x0 ProgramID.o
+ .bss           0x03804974        0x0 _console.o
+ .bss           0x03804974        0x0 a7sleep.o
+ .bss           0x03804974      0x1a8 main.o
+ .bss           0x03804b1c        0xc pcm1770.o
+ .bss           0x03804b28        0x0 rawpcm.o
+ .bss           0x03804b28        0x0 romeo2_hp.o
+ .bss           0x03804b28        0x0 filesysARM7.o
+ .bss           0x03804b28       0x10 memtoolARM7.o
+ .bss           0x03804b38        0x0 plug_mp2.o
+ .bss           0x03804b38        0x0 bit.o
+ .bss           0x03804b38        0x0 decoder.o
+ .bss           0x03804b38        0x0 fixed.o
+ .bss           0x03804b38        0x0 frame.o
+ .bss           0x03804b38        0x0 layer12.o
+ .bss           0x03804b38        0x0 stream.o
+ .bss           0x03804b38        0x0 synth.o
+ .bss           0x03804b38        0x0 version.o
+ .bss           0x03804b38        0x0 snd_click_long_c_bin.o
+ .bss           0x03804b38        0x0 snd_click_short_c_bin.o
+ .bss           0x03804b38        0x0 read_bios.o
+ .bss           0x03804b38        0x0 /opt/devkitpro/libnds/lib/libnds7.a(clock.o)
+ .bss           0x03804b38        0x0 /opt/devkitpro/libnds/lib/libnds7.a(spi.o)
+ .bss           0x03804b38        0x0 /opt/devkitpro/libnds/lib/libnds7.a(system.o)
+ .bss           0x03804b38       0x18 /opt/devkitpro/libnds/lib/libnds7.a(touch.o)
+                0x03804b3b                __dsimode
+ .bss           0x03804b50        0x0 /opt/devkitpro/libnds/lib/libnds7.a(userSettings.o)
+ .bss           0x03804b50        0x8 /opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o)
+                0x03804b54                processing
+ .bss           0x03804b58        0x4 /opt/devkitpro/libnds/lib/libnds7.a(interrupts.o)
+ .bss           0x03804b5c        0x0 /opt/devkitpro/libnds/lib/libnds7.a(libnds_exit.arm.o)
+ .bss           0x03804b5c        0x0 /opt/devkitpro/libnds/lib/libnds7.a(intrwait.o)
+ .bss           0x03804b5c        0x0 /opt/devkitpro/libnds/lib/libnds7.a(biosCalls.o)
+ .bss           0x03804b5c        0x0 /opt/devkitpro/libnds/lib/libnds7.a(interruptDispatcher.o)
+ .bss           0x03804b5c        0x0 /opt/devkitpro/libnds/lib/libnds7.a(swiSoftReset.o)
+ .bss           0x03804b5c        0x4 /opt/devkitpro/libnds/lib/libnds7.a(i2c.o)
+ .bss           0x03804b60       0x28 /opt/devkitpro/libnds/lib/libnds7.a(sdmmc.o)
+                0x03804b78                sdmmc_cardready
+ .bss           0x03804b88        0x0 /opt/devkitpro/libnds/lib/libnds7.a(systemShutDown.o)
+ .bss           0x03804b88        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/libgcc.a(_udivsi3.o)
+ .bss           0x03804b88        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/libgcc.a(_divsi3.o)
+ .bss           0x03804b88        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/libgcc.a(_dvmd_tls.o)
+ .bss           0x03804b88        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
+ .bss           0x03804b88        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-malloc.o)
+ .bss           0x03804b88       0x34 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+                0x03804b88                __malloc_top_pad
+                0x03804b8c                __malloc_current_mallinfo
+                0x03804bb4                __malloc_max_sbrked_mem
+                0x03804bb8                __malloc_max_total_mem
+ .bss           0x03804bbc        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-memcpy-stub.o)
+ .bss           0x03804bbc        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-mlock.o)
+ .bss           0x03804bbc        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-freer.o)
+ .bss           0x03804bbc        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
+ .bss           0x03804bbc        0x4 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libsysbase.a(sbrk.o)
+ .bss           0x03804bc0        0x8 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libsysbase.a(malloc_vars.o)
+                0x03804bc0                fake_heap_start
+                0x03804bc4                fake_heap_end
+ .bss           0x03804bc8        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtend.o
+ .bss           0x03804bc8        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtn.o
+ *(COMMON)
+ COMMON         0x03804bc8        0x1 memtoolARM7.o
+                0x03804bc8                MappedVRAM
+ *fill*         0x03804bc9        0x3 00
+ COMMON         0x03804bcc      0xa40 /opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o)
+                0x03804bcc                fifo_datamsg_data
+                0x03804c0c                fifo_buffer
+                0x0380540c                fifo_value32_func
+                0x0380544c                fifo_address_func
+                0x0380548c                fifo_value32_data
+                0x038054cc                fifo_value32_queue
+                0x0380550c                fifo_data_queue
+                0x0380554c                fifo_address_data
+                0x0380558c                fifo_datamsg_func
+                0x038055cc                fifo_address_queue
+ COMMON         0x0380560c      0x190 /opt/devkitpro/libnds/lib/libnds7.a(interrupts.o)
+                0x0380560c                irqTableAUX
+                0x038056d4                irqTable
+ COMMON         0x0380579c       0x10 /opt/devkitpro/libnds/lib/libnds7.a(sdmmc.o)
+                0x0380579c                sdmmc_cid
+                0x038057ac                . = ALIGN (0x4)
+                0x038057ac                __bss_end__ = ABSOLUTE (.)
+                0x038057ac                __end__ = ABSOLUTE (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x44
+ *(.comment)
+ .comment       0x00000000       0x22 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtbegin.o
+                                 0x23 (size before relaxing)
+ .comment       0x00000000       0x23 ProgramID.o
+ .comment       0x00000000       0x23 _console.o
+ .comment       0x00000000       0x23 a7sleep.o
+ .comment       0x00000000       0x23 main.o
+ .comment       0x00000000       0x23 pcm1770.o
+ .comment       0x00000000       0x23 rawpcm.o
+ .comment       0x00000000       0x23 romeo2_hp.o
+ .comment       0x00000000       0x23 filesysARM7.o
+ .comment       0x00000000       0x23 memtoolARM7.o
+ .comment       0x00000000       0x23 plug_mp2.o
+ .comment       0x00000000       0x23 bit.o
+ .comment       0x00000000       0x23 decoder.o
+ .comment       0x00000000       0x23 fixed.o
+ .comment       0x00000000       0x23 frame.o
+ .comment       0x00000000       0x23 layer12.o
+ .comment       0x00000000       0x23 stream.o
+ .comment       0x00000000       0x23 synth.o
+ .comment       0x00000000       0x23 version.o
+ .comment       0x00000000       0x23 snd_click_long_c_bin.o
+ .comment       0x00000000       0x23 snd_click_short_c_bin.o
+ .comment       0x00000022       0x22 /opt/devkitpro/libnds/lib/libnds7.a(clock.o)
+                                 0x23 (size before relaxing)
+ .comment       0x00000000       0x23 /opt/devkitpro/libnds/lib/libnds7.a(spi.o)
+ .comment       0x00000000       0x23 /opt/devkitpro/libnds/lib/libnds7.a(system.o)
+ .comment       0x00000000       0x23 /opt/devkitpro/libnds/lib/libnds7.a(touch.o)
+ .comment       0x00000000       0x23 /opt/devkitpro/libnds/lib/libnds7.a(userSettings.o)
+ .comment       0x00000000       0x23 /opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o)
+ .comment       0x00000000       0x23 /opt/devkitpro/libnds/lib/libnds7.a(interrupts.o)
+ .comment       0x00000000       0x23 /opt/devkitpro/libnds/lib/libnds7.a(libnds_exit.arm.o)
+ .comment       0x00000000       0x23 /opt/devkitpro/libnds/lib/libnds7.a(i2c.o)
+ .comment       0x00000000       0x23 /opt/devkitpro/libnds/lib/libnds7.a(sdmmc.o)
+ .comment       0x00000000       0x23 /opt/devkitpro/libnds/lib/libnds7.a(systemShutDown.o)
+ .comment       0x00000000       0x23 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
+ .comment       0x00000000       0x23 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-malloc.o)
+ .comment       0x00000000       0x23 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+ .comment       0x00000000       0x23 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-memcpy-stub.o)
+ .comment       0x00000000       0x23 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-mlock.o)
+ .comment       0x00000000       0x23 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-freer.o)
+ .comment       0x00000000       0x23 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
+ .comment       0x00000000       0x23 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libsysbase.a(sbrk.o)
+ .comment       0x00000000       0x23 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libsysbase.a(malloc_vars.o)
+ .comment       0x00000000       0x23 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtend.o
+
+.ARM.attributes
+                0x00000000       0x2d
+ .ARM.attributes
+                0x00000000       0x18 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/ds_arm7_crt0.o
+ .ARM.attributes
+                0x00000018       0x18 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crti.o
+ .ARM.attributes
+                0x00000030       0x32 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtbegin.o
+ .ARM.attributes
+                0x00000062       0x2e ProgramID.o
+ .ARM.attributes
+                0x00000090       0x2e _console.o
+ .ARM.attributes
+                0x000000be       0x2e a7sleep.o
+ .ARM.attributes
+                0x000000ec       0x2e main.o
+ .ARM.attributes
+                0x0000011a       0x2e pcm1770.o
+ .ARM.attributes
+                0x00000148       0x2e rawpcm.o
+ .ARM.attributes
+                0x00000176       0x2e romeo2_hp.o
+ .ARM.attributes
+                0x000001a4       0x2e filesysARM7.o
+ .ARM.attributes
+                0x000001d2       0x2e memtoolARM7.o
+ .ARM.attributes
+                0x00000200       0x2e plug_mp2.o
+ .ARM.attributes
+                0x0000022e       0x2e bit.o
+ .ARM.attributes
+                0x0000025c       0x2e decoder.o
+ .ARM.attributes
+                0x0000028a       0x2e fixed.o
+ .ARM.attributes
+                0x000002b8       0x2e frame.o
+ .ARM.attributes
+                0x000002e6       0x2e layer12.o
+ .ARM.attributes
+                0x00000314       0x2e stream.o
+ .ARM.attributes
+                0x00000342       0x2e synth.o
+ .ARM.attributes
+                0x00000370       0x2e version.o
+ .ARM.attributes
+                0x0000039e       0x2e snd_click_long_c_bin.o
+ .ARM.attributes
+                0x000003cc       0x2e snd_click_short_c_bin.o
+ .ARM.attributes
+                0x000003fa       0x18 read_bios.o
+ .ARM.attributes
+                0x00000412       0x2e /opt/devkitpro/libnds/lib/libnds7.a(clock.o)
+ .ARM.attributes
+                0x00000440       0x2e /opt/devkitpro/libnds/lib/libnds7.a(spi.o)
+ .ARM.attributes
+                0x0000046e       0x2e /opt/devkitpro/libnds/lib/libnds7.a(system.o)
+ .ARM.attributes
+                0x0000049c       0x2e /opt/devkitpro/libnds/lib/libnds7.a(touch.o)
+ .ARM.attributes
+                0x000004ca       0x2e /opt/devkitpro/libnds/lib/libnds7.a(userSettings.o)
+ .ARM.attributes
+                0x000004f8       0x2e /opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o)
+ .ARM.attributes
+                0x00000526       0x2e /opt/devkitpro/libnds/lib/libnds7.a(interrupts.o)
+ .ARM.attributes
+                0x00000554       0x2e /opt/devkitpro/libnds/lib/libnds7.a(libnds_exit.arm.o)
+ .ARM.attributes
+                0x00000582       0x22 /opt/devkitpro/libnds/lib/libnds7.a(intrwait.o)
+ .ARM.attributes
+                0x000005a4       0x22 /opt/devkitpro/libnds/lib/libnds7.a(biosCalls.o)
+ .ARM.attributes
+                0x000005c6       0x22 /opt/devkitpro/libnds/lib/libnds7.a(interruptDispatcher.o)
+ .ARM.attributes
+                0x000005e8       0x22 /opt/devkitpro/libnds/lib/libnds7.a(swiSoftReset.o)
+ .ARM.attributes
+                0x0000060a       0x2e /opt/devkitpro/libnds/lib/libnds7.a(i2c.o)
+ .ARM.attributes
+                0x00000638       0x2e /opt/devkitpro/libnds/lib/libnds7.a(sdmmc.o)
+ .ARM.attributes
+                0x00000666       0x2e /opt/devkitpro/libnds/lib/libnds7.a(systemShutDown.o)
+ .ARM.attributes
+                0x00000694       0x1a /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x000006ae       0x1a /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x000006c8       0x18 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x000006e0       0x32 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
+ .ARM.attributes
+                0x00000712       0x32 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-malloc.o)
+ .ARM.attributes
+                0x00000744       0x32 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+ .ARM.attributes
+                0x00000776       0x32 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x000007a8       0x32 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-mlock.o)
+ .ARM.attributes
+                0x000007da       0x32 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-freer.o)
+ .ARM.attributes
+                0x0000080c       0x32 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000083e       0x32 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libsysbase.a(sbrk.o)
+ .ARM.attributes
+                0x00000870       0x32 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libsysbase.a(malloc_vars.o)
+ .ARM.attributes
+                0x000008a2       0x32 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtend.o
+ .ARM.attributes
+                0x000008d4       0x1a /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtn.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x1e0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 /opt/devkitpro/libnds/lib/libnds7.a(clock.o)
+ .debug_aranges
+                0x00000020       0x20 /opt/devkitpro/libnds/lib/libnds7.a(spi.o)
+ .debug_aranges
+                0x00000040       0x20 /opt/devkitpro/libnds/lib/libnds7.a(system.o)
+ .debug_aranges
+                0x00000060       0x20 /opt/devkitpro/libnds/lib/libnds7.a(touch.o)
+ .debug_aranges
+                0x00000080       0x20 /opt/devkitpro/libnds/lib/libnds7.a(userSettings.o)
+ .debug_aranges
+                0x000000a0       0x20 /opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o)
+ .debug_aranges
+                0x000000c0       0x20 /opt/devkitpro/libnds/lib/libnds7.a(interrupts.o)
+ .debug_aranges
+                0x000000e0       0x20 /opt/devkitpro/libnds/lib/libnds7.a(libnds_exit.arm.o)
+ .debug_aranges
+                0x00000100       0x20 /opt/devkitpro/libnds/lib/libnds7.a(intrwait.o)
+ .debug_aranges
+                0x00000120       0x20 /opt/devkitpro/libnds/lib/libnds7.a(biosCalls.o)
+ .debug_aranges
+                0x00000140       0x20 /opt/devkitpro/libnds/lib/libnds7.a(interruptDispatcher.o)
+ .debug_aranges
+                0x00000160       0x20 /opt/devkitpro/libnds/lib/libnds7.a(swiSoftReset.o)
+ .debug_aranges
+                0x00000180       0x20 /opt/devkitpro/libnds/lib/libnds7.a(i2c.o)
+ .debug_aranges
+                0x000001a0       0x20 /opt/devkitpro/libnds/lib/libnds7.a(sdmmc.o)
+ .debug_aranges
+                0x000001c0       0x20 /opt/devkitpro/libnds/lib/libnds7.a(systemShutDown.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x8315
+ *(.debug_info)
+ .debug_info    0x00000000      0xaad /opt/devkitpro/libnds/lib/libnds7.a(clock.o)
+ .debug_info    0x00000aad      0x332 /opt/devkitpro/libnds/lib/libnds7.a(spi.o)
+ .debug_info    0x00000ddf      0x769 /opt/devkitpro/libnds/lib/libnds7.a(system.o)
+ .debug_info    0x00001548      0xc5f /opt/devkitpro/libnds/lib/libnds7.a(touch.o)
+ .debug_info    0x000021a7      0x5ac /opt/devkitpro/libnds/lib/libnds7.a(userSettings.o)
+ .debug_info    0x00002753     0x13cc /opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o)
+ .debug_info    0x00003b1f      0xb64 /opt/devkitpro/libnds/lib/libnds7.a(interrupts.o)
+ .debug_info    0x00004683      0x29f /opt/devkitpro/libnds/lib/libnds7.a(libnds_exit.arm.o)
+ .debug_info    0x00004922       0xbc /opt/devkitpro/libnds/lib/libnds7.a(intrwait.o)
+ .debug_info    0x000049de       0xbf /opt/devkitpro/libnds/lib/libnds7.a(biosCalls.o)
+ .debug_info    0x00004a9d       0xc9 /opt/devkitpro/libnds/lib/libnds7.a(interruptDispatcher.o)
+ .debug_info    0x00004b66       0xc2 /opt/devkitpro/libnds/lib/libnds7.a(swiSoftReset.o)
+ .debug_info    0x00004c28      0x436 /opt/devkitpro/libnds/lib/libnds7.a(i2c.o)
+ .debug_info    0x0000505e     0x3072 /opt/devkitpro/libnds/lib/libnds7.a(sdmmc.o)
+ .debug_info    0x000080d0      0x245 /opt/devkitpro/libnds/lib/libnds7.a(systemShutDown.o)
+
+.debug_abbrev   0x00000000     0x1a4e
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x27b /opt/devkitpro/libnds/lib/libnds7.a(clock.o)
+ .debug_abbrev  0x0000027b      0x1c4 /opt/devkitpro/libnds/lib/libnds7.a(spi.o)
+ .debug_abbrev  0x0000043f      0x200 /opt/devkitpro/libnds/lib/libnds7.a(system.o)
+ .debug_abbrev  0x0000063f      0x351 /opt/devkitpro/libnds/lib/libnds7.a(touch.o)
+ .debug_abbrev  0x00000990      0x15b /opt/devkitpro/libnds/lib/libnds7.a(userSettings.o)
+ .debug_abbrev  0x00000aeb      0x422 /opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o)
+ .debug_abbrev  0x00000f0d      0x2f9 /opt/devkitpro/libnds/lib/libnds7.a(interrupts.o)
+ .debug_abbrev  0x00001206      0x13d /opt/devkitpro/libnds/lib/libnds7.a(libnds_exit.arm.o)
+ .debug_abbrev  0x00001343       0x14 /opt/devkitpro/libnds/lib/libnds7.a(intrwait.o)
+ .debug_abbrev  0x00001357       0x14 /opt/devkitpro/libnds/lib/libnds7.a(biosCalls.o)
+ .debug_abbrev  0x0000136b       0x14 /opt/devkitpro/libnds/lib/libnds7.a(interruptDispatcher.o)
+ .debug_abbrev  0x0000137f       0x14 /opt/devkitpro/libnds/lib/libnds7.a(swiSoftReset.o)
+ .debug_abbrev  0x00001393      0x1c8 /opt/devkitpro/libnds/lib/libnds7.a(i2c.o)
+ .debug_abbrev  0x0000155b      0x410 /opt/devkitpro/libnds/lib/libnds7.a(sdmmc.o)
+ .debug_abbrev  0x0000196b       0xe3 /opt/devkitpro/libnds/lib/libnds7.a(systemShutDown.o)
+
+.debug_line     0x00000000     0x25d7
+ *(.debug_line)
+ .debug_line    0x00000000      0x374 /opt/devkitpro/libnds/lib/libnds7.a(clock.o)
+ .debug_line    0x00000374      0x228 /opt/devkitpro/libnds/lib/libnds7.a(spi.o)
+ .debug_line    0x0000059c      0x25a /opt/devkitpro/libnds/lib/libnds7.a(system.o)
+ .debug_line    0x000007f6      0x445 /opt/devkitpro/libnds/lib/libnds7.a(touch.o)
+ .debug_line    0x00000c3b      0x1d0 /opt/devkitpro/libnds/lib/libnds7.a(userSettings.o)
+ .debug_line    0x00000e0b      0x4b6 /opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o)
+ .debug_line    0x000012c1      0x342 /opt/devkitpro/libnds/lib/libnds7.a(interrupts.o)
+ .debug_line    0x00001603      0x1c0 /opt/devkitpro/libnds/lib/libnds7.a(libnds_exit.arm.o)
+ .debug_line    0x000017c3       0x97 /opt/devkitpro/libnds/lib/libnds7.a(intrwait.o)
+ .debug_line    0x0000185a       0xc5 /opt/devkitpro/libnds/lib/libnds7.a(biosCalls.o)
+ .debug_line    0x0000191f       0xcd /opt/devkitpro/libnds/lib/libnds7.a(interruptDispatcher.o)
+ .debug_line    0x000019ec       0x90 /opt/devkitpro/libnds/lib/libnds7.a(swiSoftReset.o)
+ .debug_line    0x00001a7c      0x1ff /opt/devkitpro/libnds/lib/libnds7.a(i2c.o)
+ .debug_line    0x00001c7b      0x7bb /opt/devkitpro/libnds/lib/libnds7.a(sdmmc.o)
+ .debug_line    0x00002436      0x1a1 /opt/devkitpro/libnds/lib/libnds7.a(systemShutDown.o)
+
+.debug_frame    0x00000000      0xae8
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x150 /opt/devkitpro/libnds/lib/libnds7.a(clock.o)
+ .debug_frame   0x00000150       0x6c /opt/devkitpro/libnds/lib/libnds7.a(spi.o)
+ .debug_frame   0x000001bc       0x70 /opt/devkitpro/libnds/lib/libnds7.a(system.o)
+ .debug_frame   0x0000022c      0x190 /opt/devkitpro/libnds/lib/libnds7.a(touch.o)
+ .debug_frame   0x000003bc       0x34 /opt/devkitpro/libnds/lib/libnds7.a(userSettings.o)
+ .debug_frame   0x000003f0      0x284 /opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o)
+ .debug_frame   0x00000674      0x184 /opt/devkitpro/libnds/lib/libnds7.a(interrupts.o)
+ .debug_frame   0x000007f8       0x38 /opt/devkitpro/libnds/lib/libnds7.a(libnds_exit.arm.o)
+ .debug_frame   0x00000830      0x110 /opt/devkitpro/libnds/lib/libnds7.a(i2c.o)
+ .debug_frame   0x00000940      0x180 /opt/devkitpro/libnds/lib/libnds7.a(sdmmc.o)
+ .debug_frame   0x00000ac0       0x28 /opt/devkitpro/libnds/lib/libnds7.a(systemShutDown.o)
+
+.debug_str      0x00000000     0x1a05
+ *(.debug_str)
+ .debug_str     0x00000000      0x3dd /opt/devkitpro/libnds/lib/libnds7.a(clock.o)
+                                0x443 (size before relaxing)
+ .debug_str     0x000003dd      0x19e /opt/devkitpro/libnds/lib/libnds7.a(spi.o)
+                                0x267 (size before relaxing)
+ .debug_str     0x0000057b      0x2eb /opt/devkitpro/libnds/lib/libnds7.a(system.o)
+                                0x5cb (size before relaxing)
+ .debug_str     0x00000866      0x344 /opt/devkitpro/libnds/lib/libnds7.a(touch.o)
+                                0x4d1 (size before relaxing)
+ .debug_str     0x00000baa       0xfa /opt/devkitpro/libnds/lib/libnds7.a(userSettings.o)
+                                0x312 (size before relaxing)
+ .debug_str     0x00000ca4      0x4d9 /opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o)
+                                0x793 (size before relaxing)
+ .debug_str     0x0000117d      0x268 /opt/devkitpro/libnds/lib/libnds7.a(interrupts.o)
+                                0x607 (size before relaxing)
+ .debug_str     0x000013e5       0x8a /opt/devkitpro/libnds/lib/libnds7.a(libnds_exit.arm.o)
+                                0x20e (size before relaxing)
+ .debug_str     0x0000146f       0xce /opt/devkitpro/libnds/lib/libnds7.a(i2c.o)
+                                0x1df (size before relaxing)
+ .debug_str     0x0000153d      0x46e /opt/devkitpro/libnds/lib/libnds7.a(sdmmc.o)
+                                0x6e2 (size before relaxing)
+ .debug_str     0x000019ab       0x5a /opt/devkitpro/libnds/lib/libnds7.a(systemShutDown.o)
+                                0x2ed (size before relaxing)
+
+.debug_loc      0x00000000     0x4c05
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x5e3 /opt/devkitpro/libnds/lib/libnds7.a(clock.o)
+ .debug_loc     0x000005e3      0x1fc /opt/devkitpro/libnds/lib/libnds7.a(spi.o)
+ .debug_loc     0x000007df      0x2b3 /opt/devkitpro/libnds/lib/libnds7.a(system.o)
+ .debug_loc     0x00000a92      0xb50 /opt/devkitpro/libnds/lib/libnds7.a(touch.o)
+ .debug_loc     0x000015e2      0x1c7 /opt/devkitpro/libnds/lib/libnds7.a(userSettings.o)
+ .debug_loc     0x000017a9      0xf19 /opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o)
+ .debug_loc     0x000026c2      0x4de /opt/devkitpro/libnds/lib/libnds7.a(interrupts.o)
+ .debug_loc     0x00002ba0       0x5f /opt/devkitpro/libnds/lib/libnds7.a(libnds_exit.arm.o)
+ .debug_loc     0x00002bff      0x270 /opt/devkitpro/libnds/lib/libnds7.a(i2c.o)
+ .debug_loc     0x00002e6f     0x1d76 /opt/devkitpro/libnds/lib/libnds7.a(sdmmc.o)
+ .debug_loc     0x00004be5       0x20 /opt/devkitpro/libnds/lib/libnds7.a(systemShutDown.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.stack          0x00080000        0x0
+                0x00080000                _stack = .
+ *(.stack)
+LOAD /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/ds_arm7_crt0.o
+LOAD /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crti.o
+LOAD /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtbegin.o
+LOAD ProgramID.o
+LOAD _console.o
+LOAD a7sleep.o
+LOAD main.o
+LOAD pcm1770.o
+LOAD rawpcm.o
+LOAD romeo2_hp.o
+LOAD filesysARM7.o
+LOAD memtoolARM7.o
+LOAD plug_mp2.o
+LOAD bit.o
+LOAD decoder.o
+LOAD fixed.o
+LOAD frame.o
+LOAD layer12.o
+LOAD stream.o
+LOAD synth.o
+LOAD version.o
+LOAD snd_click_long_c_bin.o
+LOAD snd_click_short_c_bin.o
+LOAD read_bios.o
+LOAD /opt/devkitpro/libnds/lib/libnds7.a
+LOAD /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libstdc++.a
+LOAD /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libm.a
+START GROUP
+LOAD /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/libgcc.a
+LOAD /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libc.a
+LOAD /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/libsysbase.a
+END GROUP
+LOAD /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtend.o
+LOAD /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/4.7.1/crtn.o
+OUTPUT(/fishshell2gcc-code/source/arm7/fishell2.elf elf32-littlearm)
+
+.debug_ranges   0x00000000      0xaf0
+ .debug_ranges  0x00000000       0x40 /opt/devkitpro/libnds/lib/libnds7.a(clock.o)
+ .debug_ranges  0x00000040       0xb8 /opt/devkitpro/libnds/lib/libnds7.a(spi.o)
+ .debug_ranges  0x000000f8       0x18 /opt/devkitpro/libnds/lib/libnds7.a(system.o)
+ .debug_ranges  0x00000110       0x70 /opt/devkitpro/libnds/lib/libnds7.a(touch.o)
+ .debug_ranges  0x00000180      0x288 /opt/devkitpro/libnds/lib/libnds7.a(fifosystem.o)
+ .debug_ranges  0x00000408      0x160 /opt/devkitpro/libnds/lib/libnds7.a(interrupts.o)
+ .debug_ranges  0x00000568      0x588 /opt/devkitpro/libnds/lib/libnds7.a(sdmmc.o)

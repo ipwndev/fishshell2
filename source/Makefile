@@ -8,7 +8,7 @@ endif
 include $(DEVKITARM)/ds_rules
 
 export GAME_TITLE	:=	FishShell2 (GCC)
-export GAME_SUBTITLE1	:=	alpha
+export GAME_SUBTITLE1	:=	DSi MediaPlayer
 export GAME_SUBTITLE2	:=	Team KRypt0n
 export GAME_ICON	:=	$(CURDIR)/icon.bmp
 export TARGET		:=	fishell2
